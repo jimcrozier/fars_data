@@ -1,3 +1,7 @@
+
+The FARS dataset contains information on every fatal accident in the US from 1975 - 2015. 
+There are roughly 35k accidents per year so the data starts getting pretty big. 
+
 This analysis is the beginning skelton of a project to pull down all data from the FARS dataset, add them to hdfs,
 and analyze with sparklyr. 
 
