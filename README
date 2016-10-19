@@ -1,0 +1,12 @@
+This analysis is the beginning skelton of a project to pull down all data from the FARS dataset, add them to hdfs,
+and analyze with sparklyr. 
+
+To run, make sure that you have postgres, hdfs and hive all set with the specifications in the code, and that the 
+absolute working directories are changed to yours. You will also need access to the shell, so I am not sure 
+how well this will work in windows. 
+
+1. download_data_gen_shell.R #make sure to run the shell script that it creates
+2. load_data_into_postgres.R 
+3. sqoop_from_postgres_into_hive_shell_gen.R #make sure to run the shell script that it creates
+4. hive_concat_all_years_shell_gen.R #make sure to run the shell script that it creates
+5. spark_analysis.R 
